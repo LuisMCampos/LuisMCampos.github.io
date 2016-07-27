@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Nuno Gonçalves</title>
+  </head>
+
+  <body>
+    <div id="content"></div>
+
+    <script id="profile_template" type="text/x-handlebars-template">
+      <div class="centered body">
+        <div>
+          <div style="display: inline-block;float: left;">
+            <img class="avatar" src="{{avatar_url}}">
+          </div>
+          <div class="name_and_title">
+            <div class="profile_info">{{name}}</div>
+            <div class="profile_info">{{title}}</div>
+            <div class="profile_info">{{location}}</div>
+          </div>
+        </div>
+        </br>
+        <div style="float: left">
+          <span>
+            <a href="mailto:{{email}}" target="_blank"><img class="source_icon" src="{{email_url}}"></a>
+          </span>
+          {{#each social_sources}}
+            <span>
+              <a href="{{link}}" target="_blank"><img class="source_icon" src="{{image_url}}"></a>
+            </span>
+          {{/each}}
+        </div>
+      </div>
+    </script>
+
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/vendor/handlebars-v4.0.5.js"></script>
+    <script>
+      (function() {
+        loadGoogleAnalytics();
+        loadPageTracker();
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "https://dl.dropboxusercontent.com/u/2001692/development/GithubPages/profile.json", false);
+        xhttp.send();
+
+        var profileJSON = JSON.parse(xhttp.responseText)
+        console.log(profileJSON);
+
+        var source = document.getElementById("profile_template").innerHTML;
+        var template = Handlebars.compile(source);
+        document.getElementById("content").innerHTML = template(profileJSON);
+      })();
+    </script>
+
+  </body>
+</html>
