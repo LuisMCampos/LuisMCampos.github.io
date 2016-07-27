@@ -1,35 +1,60 @@
 {
   "name" : "Nuno Gonçalves",
-  "title" : "Software Developer",
+  "title" : "iOS Developer",
+  "email" : "goncalves.cm.nuno@gmail.com",
+  "email_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/email.png",
+  "location" : "Lisbon, Portugal",
   "avatar_url" : "https://avatars3.githubusercontent.com/u/3007012",
-  "company" : {
-    "name" : "Linkedcare",
-  },
   "projects" : [],
+  "company": {
+    "name" : "Linkedcare",
+    "link" : "http://www.linkedcare.com/en/index.html",
+    "location" : "Lisbon, Portugal",
+    "dates" : "Jan 2012 - Present"
+  },
+  "history" : {
+    "companies" : [{
+      "name" : "LatitudeN GmbH",
+      "link" : "http://www.latituden.com/home_en.html",
+      "location" : "Darmstadt, Germany",
+      "dates" : "Jan 2011 - Jul 2011"
+    }, {
+      "name" : "Linkedcare",
+      "link" : "http://www.linkedcare.com/en/index.html",
+      "location" : "Lisbon, Portugal",
+      "dates" : "Jan 2012 - Present"
+    }],
+    "personal_projects" : []
+  },
+  "technical_stuff" : {
+    "languages" : [
+      "Swift", "Ruby", "JavaScript", "Java"
+    ]
+  },
   "social_sources" : [{
       "name" : "Github",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/github.png",
-      "link" : "https://github.com/LuisMCampos"
+      "link" : "https://github.com/nunogoncalves"
     }, {
       "name" : "Medium",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/medium.png",
-      "link" : "https://www.google.com/"
+      "link" : "https://medium.com/@nunogonalves"
     }, {
       "name" : "Linkedin",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/linkedin.png",
-      "link" : "https://www.google.com/"
+      "link" : "https://pt.linkedin.com/in/goncalvescmnuno"
     }, {
       "name" : "Twitter",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/twitter.png",
-      "link" : "http://www.google.com/"
+      "link" : "https://twitter.com/goncalvescmnuno"
     }, {
       "name" : "StackOverflow",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/stackoverflow.png",
-      "link" : "http://www.google.com/"
+      "link" : "http://stackoverflow.com/users/919445/nuno-gon%C3%A7alves"
     }, {
       "name" : "App Store",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/appstore.png",
-      "link" : "http://www.google.com/"
+      "link" : "https://itunes.apple.com/developer/nuno-goncalves/id990207056"
     }
   ]
 }
