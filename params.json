@@ -39,18 +39,6 @@
       "name" : "Linkedin",
       "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/linkedin.png",
       "link" : "https://pt.linkedin.com/in/luis-campos-1103a8ba"
-    }, {
-      "name" : "Twitter",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/twitter.png",
-      "link" : "https://google.com"
-    }, {
-      "name" : "StackOverflow",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/stackoverflow.png",
-      "link" : "http://google.com"
-    }, {
-      "name" : "App Store",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/appstore.png",
-      "link" : "https://google.com"
     }
   ]
 }
