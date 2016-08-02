@@ -2,11 +2,11 @@
   "name" : "Luis M Campos",
   "title" : "Software Developer",
   "email" : "lmartcampos+githubpages@gmail.com",
-  "email_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/email.png",
+  "email_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/email.png",
   "location" : "Viseu, Portugal",
   "avatar_url" : "https://avatars3.githubusercontent.com/u/12141057",
   "projects" : [],
-  "company": {
+  /*"company": {
     "name" : "Linkedcare",
     "link" : "http://www.linkedcare.com/en/index.html",
     "location" : "Lisbon, Portugal",
@@ -30,10 +30,10 @@
     "languages" : [
       "Swift", "Ruby", "JavaScript", "Java"
     ]
-  },
+  },*/
   "social_sources" : [{
       "name" : "Github",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/github.png",
+      "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/email.png",
       "link" : "https://github.com/LuisMCampos"
     }, {
       "name" : "Medium",
@@ -41,7 +41,7 @@
       "link" : "https://google.com"
     }, {
       "name" : "Linkedin",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/linkedin.png",
+      "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/linkedin.png",
       "link" : "https://google.com"
     }, {
       "name" : "Twitter",
