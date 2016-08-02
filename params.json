@@ -35,11 +35,11 @@
       "name" : "Github",
       "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/github.png",
       "link" : "https://github.com/LuisMCampos"
-    }, /*{
+    }, {
       "name" : "Medium",
       "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/medium.png",
       "link" : "https://google.com"
-    },*/ {
+    }, {
       "name" : "Linkedin",
       "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/linkedin.png",
       "link" : "https://pt.linkedin.com/in/luis-campos-1103a8ba"
