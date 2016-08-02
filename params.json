@@ -33,7 +33,8 @@
   },*/
   "social_sources" : [{
       "name" : "Github",
-      "image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/github.png",
+      //"image_url": "https://dl.dropboxusercontent.com/u/2001692/imagesshelf/GithubPages/github.png",
+      "image_url": "url('../images/github.jpg')",
       "link" : "https://github.com/LuisMCampos"
     }, {
       "name" : "Medium",
