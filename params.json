@@ -6,7 +6,7 @@
   "location" : "Viseu, Portugal",
   "avatar_url" : "https://avatars3.githubusercontent.com/u/12141057",
   "projects" : [],
-  /*"company": {
+  "company": {
     "name" : "Linkedcare",
     "link" : "http://www.linkedcare.com/en/index.html",
     "location" : "Lisbon, Portugal",
@@ -30,7 +30,7 @@
     "languages" : [
       "Swift", "Ruby", "JavaScript", "Java"
     ]
-  },*/
+  },
   "social_sources" : [{
       "name" : "Github",
       "image_url": "https://dl.dropboxusercontent.com/u/2785144/GitHub/Site/email.png",
