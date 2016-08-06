@@ -1,12 +1,4 @@
 body {
-  border-radius: 25px;
-  border: 2px solid #DCDCDC;
-  box-shadow: 0 0 10px #D4D4D4;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 120px;
-  margin-left: 320px;
-  padding: 20px;
   height: 100%;
   
   text-align: center;
@@ -26,7 +18,18 @@ body {
   background-size: cover;
 }
 
-.profile_info {
+.border {
+  border-radius: 25px;
+  border: 2px solid #DCDCDC;
+  box-shadow: 0 0 10px #D4D4D4;
+}
+
+.text {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-right: 10%;
+  margin-left: 25%;
+  padding: 20px;
 }
 
 .centered {
