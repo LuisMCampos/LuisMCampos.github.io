@@ -20,7 +20,7 @@ body {
   text-shadow: -2px -2px 10px #D4D4D4;
 
   background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   background-size: cover;
 }
 
