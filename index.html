@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='ngSnake'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 
-  <!--[if lt IE 9]>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-  <title>LMC</title>
+	<title>LMC</title>
+	<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+  </script>
+
 </head>
 
-<body>
-  <div id="content"></div>
+<body ng-controller="snakeCtrl">
+	<div id="content"></div>
 
-  <script id="profile_template" type="text/x-handlebars-template">
+	<script id="profile_template" type="text/x-handlebars-template">
      <div class="centered body">
         <div>
           <div style="display: inline-block;float: left;">
@@ -44,9 +52,9 @@
       </div>
     </script>
 
-  <script src="javascripts/main.js"></script>
-  <script src="javascripts/vendor/handlebars-v4.0.5.js"></script>
-  <script>
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/vendor/handlebars-v4.0.5.js"></script>
+	<script>
       (function() {
         loadGoogleAnalytics();
         loadPageTracker();
@@ -64,13 +72,31 @@
       })();
     </script>
 
-  <div class="text border">
-    <h1>Summary</h1>
-    <p>I’m a new graduate with a passion to integrate an innovative and bold team. I’m responsible and open, frequently asking
-      others when in doubt but also disciplined to constantly improve myself in this field I love. I work well in a team
-      and have good communications skills. I enjoy developing applications that meet their user’s needs, and specially enjoy
-      interface design and multimedia.</p>
-  </div>
+	<div class="text border">
+		<h1>Summary</h1>
+		<p>I’m a new graduate with a passion to integrate an innovative and bold team. I’m responsible and open, frequently asking
+			others when in doubt but also disciplined to constantly improve myself in this field I love. I work well in a team and
+			have good communications skills. I enjoy developing applications that meet their user’s needs, and specially enjoy interface
+			design and multimedia.</p>
+	</div>
+
+<a href="javascript:showhide('gameContainer')">
+        Snake?
+    </a>
+
+	<div id="gameContainer" style="display:none;">
+		<h3>Score: {{score}}</h3>
+		<div>
+			<div class="row" ng-repeat="column in board">
+				<div class="column" ng-style="{'background-color': setStyling($parent.$index, $index)}" ng-repeat="row in column track by $index"></div>
+			</div>
+		</div>
+		<div id="startGame" ng-click="startGame()">Start Game</div>
+	</div>
+
+	<script src="javascripts/angular.min.js"></script>
+	<script src="javascripts/snake.js"></script>
+
 </body>
 
 </html>
